@@ -4,6 +4,9 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+# Ignore self
+.gitignore
+
 # Ignore sass
 /_sass
 
@@ -14,3 +17,6 @@
 /node_modules
 Gruntfile.js
 package.json
+
+# Ignore blog data
+/_site
