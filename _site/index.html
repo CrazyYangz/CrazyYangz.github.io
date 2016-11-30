@@ -2,33 +2,185 @@
 <html lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Yangzhen的博客</title>
-	<link rel="stylesheet" href="/public/css/main.css">
+<title>Young的博客</title>
+<link rel="icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-	<h2>Yangzhen的博客</h2>
-
-<ul>
-	
-	<li>
-		<a href="/%E6%9D%82%E8%B0%88/2016/11/11/%E6%9D%82%E4%BA%8B%E8%AE%B0%E5%BD%95.html">杂事记录</a>
-		<p><p>2016-11-11日，网购者盛大的节日，我的生日。</p>
-
+	<div id="container">
+		<div class="left-col">
+	<div class="bg-gray"></div>
+	<div class="introduce">
+		<div id="header">
+			<a href="/" class="avatar">
+				<img src="/assets/img/avatar.png" alt="">
+			</a>
+			<h1 class="author">
+				<a href="/">Young</a>
+			</h1>
+			<p class="subtitle">乐观的悲观主义者
 </p>
+			<nav class="nav">
+				<ul>
+					<li><a href="/">主页</a></li>
+					<li><a href="/">相册</a></li>
+				</ul>
+			</nav>
+			<nav class="smart-nav">
+				<a href="">所有文章</a>
+				<a href="">标签</a>
+				<a href="">关于我</a>
+			</nav>
+			<nav class="follow">
+				<div class="social">
+					<a href="" class="github" title="github">
+						<i class="iconfont">&#xe629;</i>
+						<span>github</span>
+					</a>
+					<a href="" class="weibo" title="weibo">
+						<i class="iconfont">&#xe62b;</i>
+						<span>weibo</span>
+					</a>
+					<a href="javascript:;" class="rss" title="rss">
+						<i class="iconfont">&#xe62a;</i>
+						<span>rss</span>
+					</a>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+		<div class="right-col">
+			<div class="right-wrap">
+				
+<article class="article article-type-post">
+	<div class="article-inner">
+		<header class="article-header">
+			<h1>
+				<a href="/2016/11/29/jekyll-2016-11-29" class="article-title">关于Jekyll excerpt的一些设置</a>
+			</h1>
+		</header>
+		<div class="article-entry">
+			<blockquote>
+Ps：大括号 <strong>{ }</strong> 是Jekyll中的转义字符，因此输出大括号时，应使用:
+<code>
 
-		<span>11 Nov 2016</span>
-	</li>
-	
-	<li>
-		<a href="/%E6%9D%82%E8%B0%88/2016/11/11/%E5%8F%8C11%E7%9A%84%E7%94%9F%E6%97%A5.html">第一篇博文</a>
-		<p><p>2016-11-11日，网购者盛大的节日，我的生日。</p>
+{% raw %}
+	content
+{% endraw %}。
+</code>
+</blockquote>
 
-</p>
+<p>Jekyll设置列表页的摘录，使用
+<code>{{ post.excerpt }}</code>
+，使用方法如下：</p>
 
-		<span>11 Nov 2016</span>
-	</li>
-	
-</ul>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="code"><pre>{% for post in site.posts %}
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"post-meta"</span><span class="nt">&gt;</span>{{ post.date | date: "%Y-%m-%d" }}<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"post-link"</span> <span class="na">href=</span><span class="s">"{{ post.url | prepend: site.baseurl }}"</span><span class="nt">&gt;</span> post.title }}<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/h2&gt;</span>
+    {{ post.excerpt }} <span class="c">&lt;!--在这里添加摘录--&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+{% endfor %}<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p><code>{{ post.excerpt }}</code>标签添加在第七行，Jekyll会根据post的内容的第一个段落生成摘录,样式类似于：</p>
+
+
+			<!-- 判断是否完全显示，若没有则添加more -->
+			
+			<p class="article-more-link">
+				<a href="/2016/11/29/jekyll-2016-11-29" class="article-more-a">more &gt;&gt;</a>
+			</p>
+			
+		</div>
+		<div class="article-info article-info-index">
+			<a href="" class="archive-article-date">
+				<i class="iconfont">&#xe62d;</i>
+				<span>2016-11-29</span>
+			</a>
+			<div class="article-tag tagcloud">
+				<i class="iconfont">&#xe62c;</i>
+				<ul class="article-tag-list">
+					
+					<li class="article-tag-list-item">
+						<a href="#jekyll" class="color3"> jekyll </a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</article>
+
+<article class="article article-type-post">
+	<div class="article-inner">
+		<header class="article-header">
+			<h1>
+				<a href="/2016/11/28/diary-2016-11-28" class="article-title">Hello World!</a>
+			</h1>
+		</header>
+		<div class="article-entry">
+			<p><strong>Hello World!</strong></p>
+
+<p>很久之前就想搭建个属于自己的博客，无奈懒癌严重。6月份注册了yangz.me，想用wordpress来做，结果…9月份又想再折腾折腾，心想有没有其他博客的框架呢？于是知道了Jekyll。立马在Github Pages跑了个初始页面，当时激动的不行…</p>
+
+
+			<!-- 判断是否完全显示，若没有则添加more -->
+			
+			<p class="article-more-link">
+				<a href="/2016/11/28/diary-2016-11-28" class="article-more-a">more &gt;&gt;</a>
+			</p>
+			
+		</div>
+		<div class="article-info article-info-index">
+			<a href="" class="archive-article-date">
+				<i class="iconfont">&#xe62d;</i>
+				<span>2016-11-28</span>
+			</a>
+			<div class="article-tag tagcloud">
+				<i class="iconfont">&#xe62c;</i>
+				<ul class="article-tag-list">
+					
+					<li class="article-tag-list-item">
+						<a href="#jekyll" class="color3"> jekyll </a>
+					</li>
+					
+					<li class="article-tag-list-item">
+						<a href="#日常" class="color3"> 日常 </a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</article>
+
+			</div>
+			<footer id="footer">
+	<div class="outer">
+		<div class="footer-info">
+			<div class="footer-left">
+	    		© 2016 Young
+			</div>
+			<div class="footer-right">
+				<a href="">Jekyll</a> Theme <a href="">Lura</a> by Young
+			</div>
+		</div>
+	</div>
+</footer>
+		</div>
+	</div>
 
 </body>
 </html>

@@ -13,12 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Lnatmura
+title: Young
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  知之为知之，不知为不知，是知也。
+  乐观的悲观主义者
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+excerpt_separator:  '<!-- more -->' #在posts中设置该样式，则{{ post.excerpt }}获取此样式之前的内容
+
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -30,3 +33,11 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts

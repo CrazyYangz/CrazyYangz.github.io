@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>{{ page.title }}</title>
-	<link rel="stylesheet" href="{{ site.baseurl }}/public/css/main.css">
+	{% include head.html %}
 </head>
 <body>
-	{{ content }}
+	<div id="container">
+		{% include left_col.html %}
+		<div class="right-col">
+			<div class="right-wrap">
+				{{ content }}
+			</div>
+			{% include footer.html %}
+		</div>
+	</div>
+
 </body>
 </html>

@@ -1,14 +1,119 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-27T15:51:39+08:00</updated><id>http://localhost:4000//</id><title type="html">Lnatmura</title><subtitle>知之为知之，不知为不知，是知也。
-</subtitle><entry><title type="html">杂事记录</title><link href="http://localhost:4000/%E6%9D%82%E8%B0%88/2016/11/11/%E6%9D%82%E4%BA%8B%E8%AE%B0%E5%BD%95.html" rel="alternate" type="text/html" title="杂事记录" /><published>2016-11-11T00:00:00+08:00</published><updated>2016-11-11T00:00:00+08:00</updated><id>http://localhost:4000/%E6%9D%82%E8%B0%88/2016/11/11/%E6%9D%82%E4%BA%8B%E8%AE%B0%E5%BD%95</id><content type="html" xml:base="http://localhost:4000/%E6%9D%82%E8%B0%88/2016/11/11/%E6%9D%82%E4%BA%8B%E8%AE%B0%E5%BD%95.html">&lt;p&gt;2016-11-11日，网购者盛大的节日，我的生日。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-30T02:00:50+08:00</updated><id>http://localhost:4000//</id><title type="html">Young</title><subtitle>乐观的悲观主义者
+</subtitle><entry><title type="html">关于Jekyll excerpt的一些设置</title><link href="http://localhost:4000/2016/11/29/jekyll-2016-11-29" rel="alternate" type="text/html" title="关于Jekyll excerpt的一些设置" /><published>2016-11-29T00:00:00+08:00</published><updated>2016-11-29T00:00:00+08:00</updated><id>http://localhost:4000/2016/11/29/question-collection</id><content type="html" xml:base="http://localhost:4000/2016/11/29/jekyll-2016-11-29">&lt;blockquote&gt;
+Ps：大括号 &lt;strong&gt;{ }&lt;/strong&gt; 是Jekyll中的转义字符，因此输出大括号时，应使用:
+&lt;code&gt;
 
-&lt;p&gt;刷爆朋友圈的截图，热闹非凡，却与我无关——思来想去，发了条 &lt;strong&gt;+1&lt;/strong&gt;。&lt;/p&gt;
+{% raw %}
+	content
+{% endraw %}。
+&lt;/code&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;纪念一下生日，以及这第一条博文。&lt;/p&gt;
+&lt;p&gt;Jekyll设置列表页的摘录，使用
+&lt;code&gt;{{ post.excerpt }}&lt;/code&gt;
+，使用方法如下：&lt;/p&gt;
 
-&lt;p&gt;11 Nov 2016&lt;/p&gt;</content><summary type="html">2016-11-11日，网购者盛大的节日，我的生日。</summary></entry><entry><title type="html">第一篇博文</title><link href="http://localhost:4000/%E6%9D%82%E8%B0%88/2016/11/11/%E5%8F%8C11%E7%9A%84%E7%94%9F%E6%97%A5.html" rel="alternate" type="text/html" title="第一篇博文" /><published>2016-11-11T00:00:00+08:00</published><updated>2016-11-11T00:00:00+08:00</updated><id>http://localhost:4000/%E6%9D%82%E8%B0%88/2016/11/11/%E5%8F%8C11%E7%9A%84%E7%94%9F%E6%97%A5</id><content type="html" xml:base="http://localhost:4000/%E6%9D%82%E8%B0%88/2016/11/11/%E5%8F%8C11%E7%9A%84%E7%94%9F%E6%97%A5.html">&lt;p&gt;2016-11-11日，网购者盛大的节日，我的生日。&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{% for post in site.posts %}
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-meta&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ post.date | date: &quot;%Y-%m-%d&quot; }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-link&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ post.url | prepend: site.baseurl }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; post.title }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    {{ post.excerpt }} &lt;span class=&quot;c&quot;&gt;&amp;lt;!--在这里添加摘录--&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+{% endfor %}&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;刷爆朋友圈的截图，热闹非凡，却与我无关——思来想去，发了条 &lt;strong&gt;+1&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{{ post.excerpt }}&lt;/code&gt;标签添加在第七行，Jekyll会根据post的内容的第一个段落生成摘录,样式类似于：&lt;!-- more --&gt;&lt;/p&gt;
 
-&lt;p&gt;纪念一下生日，以及这第一条博文。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/blogImg/jekyll_excerpt.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;11 Nov 2016&lt;/p&gt;</content><summary type="html">2016-11-11日，网购者盛大的节日，我的生日。</summary></entry></feed>
+&lt;p&gt;这样看起来其实已经不错了，但是如果要是能自定义摘录地长度，是不是更酷一点？&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;方法如下：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;
+		打开&quot;_config.yml&quot;，在任意处（建议在#site setting下）添加
+		&lt;code&gt;excerpt_separator: &quot;&amp;lt;!--more--&amp;gt;&quot;&lt;/code&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		打开post在任意处添加
+		&lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt;
+		标签，在此标签之前的内容将会作为摘要在列表中显示。
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这样就实现了摘要的显示自定义，如果你仔细的话会发现没有 more，代码如下：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{% for post in site.posts %}
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-meta&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ post.date | date: &quot;%b %-d, %Y&quot; }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-link&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ post.url | prepend: site.baseurl }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; post.title }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    {{ post.excerpt }}
+    {% if post.content contains site.excerpt_separator %}
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ post.url | prepend: site.baseurl }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;...Read more&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    {% endif %}
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+{% endfor %}&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><category term="jekyll" /><summary type="html">Ps：大括号 { } 是Jekyll中的转义字符，因此输出大括号时，应使用:
+
+
+{% raw %}
+	content
+{% endraw %}。
+
+
+
+Jekyll设置列表页的摘录，使用
+{{ post.excerpt }}
+，使用方法如下：
+
+1
+2
+3
+4
+5
+6
+7
+8
+9{% for post in site.posts %}
+  &amp;lt;li&amp;gt;
+    &amp;lt;span class=&quot;post-meta&quot;&amp;gt;{{ post.date | date: &quot;%Y-%m-%d&quot; }}&amp;lt;/span&amp;gt;
+    &amp;lt;h2&amp;gt;
+      &amp;lt;a class=&quot;post-link&quot; href=&quot;{{ post.url | prepend: site.baseurl }}&quot;&amp;gt; post.title }}&amp;lt;/a&amp;gt;
+    &amp;lt;/h2&amp;gt;
+    {{ post.excerpt }} &amp;lt;!--在这里添加摘录--&amp;gt;
+  &amp;lt;/li&amp;gt;
+{% endfor %}
+
+
+{{ post.excerpt }}标签添加在第七行，Jekyll会根据post的内容的第一个段落生成摘录,样式类似于：</summary></entry><entry><title type="html">Hello World!</title><link href="http://localhost:4000/2016/11/28/diary-2016-11-28" rel="alternate" type="text/html" title="Hello World!" /><published>2016-11-28T00:00:00+08:00</published><updated>2016-11-28T00:00:00+08:00</updated><id>http://localhost:4000/2016/11/28/Hello-World</id><content type="html" xml:base="http://localhost:4000/2016/11/28/diary-2016-11-28">&lt;p&gt;&lt;strong&gt;Hello World!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;很久之前就想搭建个属于自己的博客，无奈懒癌严重。6月份注册了yangz.me，想用wordpress来做，结果…9月份又想再折腾折腾，心想有没有其他博客的框架呢？于是知道了Jekyll。立马在Github Pages跑了个初始页面，当时激动的不行…&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;然后就到了这个时候，挺特殊的时期，不知道怎么搜到了&lt;a href=&quot;http://litten.me&quot; target=&quot;_blank&quot;&gt;Litten&lt;/a&gt;的博客。瞬间被这个主题吸引了，简洁、舒服、怎么看都喜欢。黎的是用Hexo搭建的，于是把页面抄了下来。折腾两天，终于是像个样子了&lt;/p&gt;
+
+&lt;p&gt;程序员就应该以”Hello World!”开始吧？😊&lt;/p&gt;</content><category term="jekyll" /><category term="日常" /><summary type="html">Hello World!
+
+很久之前就想搭建个属于自己的博客，无奈懒癌严重。6月份注册了yangz.me，想用wordpress来做，结果…9月份又想再折腾折腾，心想有没有其他博客的框架呢？于是知道了Jekyll。立马在Github Pages跑了个初始页面，当时激动的不行…</summary></entry></feed>
