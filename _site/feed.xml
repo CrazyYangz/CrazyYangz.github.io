@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-30T02:00:50+08:00</updated><id>http://localhost:4000//</id><title type="html">Young</title><subtitle>乐观的悲观主义者
-</subtitle><entry><title type="html">关于Jekyll excerpt的一些设置</title><link href="http://localhost:4000/2016/11/29/jekyll-2016-11-29" rel="alternate" type="text/html" title="关于Jekyll excerpt的一些设置" /><published>2016-11-29T00:00:00+08:00</published><updated>2016-11-29T00:00:00+08:00</updated><id>http://localhost:4000/2016/11/29/question-collection</id><content type="html" xml:base="http://localhost:4000/2016/11/29/jekyll-2016-11-29">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-30T14:07:46+08:00</updated><id>http://localhost:4000//</id><title type="html">Young</title><subtitle>乐观的悲观主义者
+</subtitle><entry><title type="html">关于Jekyll excerpt的一些设置</title><link href="http://localhost:4000/2016/11/29/jekyll-excerpt/" rel="alternate" type="text/html" title="关于Jekyll excerpt的一些设置" /><published>2016-11-29T00:00:00+08:00</published><updated>2016-11-29T00:00:00+08:00</updated><id>http://localhost:4000/2016/11/29/jekyll-excerpt</id><content type="html" xml:base="http://localhost:4000/2016/11/29/jekyll-excerpt/">&lt;blockquote&gt;
 Ps：大括号 &lt;strong&gt;{ }&lt;/strong&gt; 是Jekyll中的转义字符，因此输出大括号时，应使用:
 &lt;code&gt;
 
@@ -108,7 +108,7 @@ Jekyll设置列表页的摘录，使用
 {% endfor %}
 
 
-{{ post.excerpt }}标签添加在第七行，Jekyll会根据post的内容的第一个段落生成摘录,样式类似于：</summary></entry><entry><title type="html">Hello World!</title><link href="http://localhost:4000/2016/11/28/diary-2016-11-28" rel="alternate" type="text/html" title="Hello World!" /><published>2016-11-28T00:00:00+08:00</published><updated>2016-11-28T00:00:00+08:00</updated><id>http://localhost:4000/2016/11/28/Hello-World</id><content type="html" xml:base="http://localhost:4000/2016/11/28/diary-2016-11-28">&lt;p&gt;&lt;strong&gt;Hello World!&lt;/strong&gt;&lt;/p&gt;
+{{ post.excerpt }}标签添加在第七行，Jekyll会根据post的内容的第一个段落生成摘录,样式类似于：</summary></entry><entry><title type="html">Hello World!</title><link href="http://localhost:4000/2016/11/28/diary-hello-world/" rel="alternate" type="text/html" title="Hello World!" /><published>2016-11-28T00:00:00+08:00</published><updated>2016-11-28T00:00:00+08:00</updated><id>http://localhost:4000/2016/11/28/Hello-World</id><content type="html" xml:base="http://localhost:4000/2016/11/28/diary-hello-world/">&lt;p&gt;&lt;strong&gt;Hello World!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;很久之前就想搭建个属于自己的博客，无奈懒癌严重。6月份注册了yangz.me，想用wordpress来做，结果…9月份又想再折腾折腾，心想有没有其他博客的框架呢？于是知道了Jekyll。立马在Github Pages跑了个初始页面，当时激动的不行…&lt;!-- more --&gt;&lt;/p&gt;
 

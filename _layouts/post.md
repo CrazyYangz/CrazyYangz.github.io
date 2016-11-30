@@ -34,6 +34,38 @@
 						</div>
 					</div>
 				</article>
+				<nav id="article-nav">
+					{% if page.previous %}
+					<a href="{{ site.url}}{{ page.previous.url }}" id="article-nav-newer" class="article-nav-link-wrap">
+						<i class="iconfont">&#xe61d;</i>
+						<div class="article-nav-title">{{ page.previous.title }}</div>
+					</a>
+					{% endif %}
+					{% if page.next %}
+					<a href="{{ site.url}}{{ page.next.url }}" id="article-nav-older" class="article-nav-link-wrap">
+						<div class="article-nav-title">{{ page.next.title }}</div>
+						<i class="iconfont">&#xe633;</i>
+					</a>
+					{% endif %}
+				</nav>
+				<div class="duoshuo">
+					<!-- 多说评论框 start -->
+					<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
+					<!-- 多说评论框 end -->
+					<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+					<script type="text/javascript">
+					var duoshuoQuery = {short_name:"yangzhen"};
+						(function() {
+							var ds = document.createElement('script');
+							ds.type = 'text/javascript';ds.async = true;
+							ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+							ds.charset = 'UTF-8';
+							(document.getElementsByTagName('head')[0]
+							 || document.getElementsByTagName('body')[0]).appendChild(ds);
+						})();
+						</script>
+					<!-- 多说公共JS代码 end -->
+				</div>
 			</div>
 			{% include footer.html %}
 		</div>

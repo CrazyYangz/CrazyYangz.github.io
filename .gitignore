@@ -20,3 +20,6 @@ package.json
 
 # Ignore blog data
 /_site
+
+#Ignore others
+/assets/img/.DS_Store

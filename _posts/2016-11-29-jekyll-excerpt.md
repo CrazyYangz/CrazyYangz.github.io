@@ -4,7 +4,7 @@ title:			关于Jekyll excerpt的一些设置
 date:   		2016-11-29
 categories: jekyll
 tags: 			jekyll
-permalink: 	/:year/:month/:day/:categories-:year-:month-:day
+permalink: 	/:year/:month/:day/:categories-excerpt/
 ---
 <blockquote>
 Ps：大括号 <strong>{ }</strong> 是Jekyll中的转义字符，因此输出大括号时，应使用:

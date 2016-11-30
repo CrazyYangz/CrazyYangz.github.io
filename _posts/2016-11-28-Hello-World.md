@@ -4,7 +4,7 @@ title:			Hello World!
 date:   		2016-11-28
 categories: diary
 tags: 			[jekyll,日常]
-permalink: 	/:year/:month/:day/:categories-:year-:month-:day
+permalink: 	/:year/:month/:day/:categories-hello-world/
 ---
 
 <strong>Hello World!</strong>
