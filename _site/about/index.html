@@ -11,7 +11,7 @@
 		<div class="left-col">
 	<div class="bg-gray"></div>
 	<div class="introduce">
-		<div id="header">
+		<header id="header">
 			<a href="/" class="avatar">
 				<img src="/assets/img/avatar.png" alt="">
 			</a>
@@ -26,10 +26,10 @@
 					<li><a href="/">相册</a></li>
 				</ul>
 			</nav>
-			<nav class="smart-nav">
-				<a href="">所有文章</a>
-				<a href="">标签</a>
-				<a href="">关于我</a>
+			<nav class="smart-nav header-smart-menu">
+				<a href="javascript:;" class="js-smart-menu" data-idx="0">所有文章</a>
+				<a href="javascript:;" class="js-smart-menu" data-idx="1">标签</a>
+				<a href="javascript:;" class="js-smart-menu" data-idx="2">关于我</a>
 			</nav>
 			<nav class="follow">
 				<div class="social">
@@ -47,10 +47,10 @@
 					</a>
 				</div>
 			</nav>
-		</div>
+		</header>
 	</div>
 </div>
-		<div class="right-col">
+		<div class="right-col mid-col">
 			<div class="right-wrap">
 				<article class="post">
 
@@ -93,5 +93,58 @@
 		</div>
 	</div>
 
+	<script>
+		var yiliaConfig = {
+			mathjax: false,
+			animate: true,
+			isHome: false,
+			isPost: false,
+			isArchive: false,
+			isTag: true,
+			isCategory: false,
+			open_in_new: true,
+			root: "/",
+			innerArchive: true
+		}
+	</script>
+	<script src="/assets/js/main.js"></script>
+	<div class="tools-col">
+  <ul class="btn-wrap">
+      <li class="chose" data-hook="tools-section-all">
+        <span class="text">全部</span>
+        <i class="iconfont icon-book">&#xe61c;</i>
+      </li>
+      <li data-hook="tools-section-tag">
+        <span class="text">标签</span>
+        <i class="iconfont icon-price-tags">&#xe600;</i>
+      </li>
+      <li data-hook="tools-section-me">
+        <span class="text">我</span>
+        <i class="iconfont icon-smile">&#xe7d4;</i>
+      </li>
+  </ul>
+  <div class="tools-wrap">
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+          
+            
+            
+    				<a href="/tags/jekyll" style="font-size: 10px;">jekyll</a>
+          
+            
+            
+    				<a href="/tags/日常" style="font-size: 10px;">日常</a>
+          
+    			</div>
+    	</section>
+
+    	<section class="tools-section tools-section-me">
+  	  		<div class="aboutme-wrap" id="js-aboutme">Litten，&lt;br&gt;毕业于华科，就职于鹅厂&lt;br&gt;&lt;br&gt;热爱大海与冷笑话，&lt;br/&gt;目前是一枚前端&lt;br/&gt;&lt;br/&gt;胆小认生，不易相处，&lt;br&gt;年轻无为，卖马为生。</div>
+    	</section>
+  </div>
+</div>
 </body>
 </html>

@@ -70,5 +70,22 @@
 			{% include footer.html %}
 		</div>
 	</div>
+
+	<script>
+		var yiliaConfig = {
+			mathjax: false,
+			animate: true,
+			isHome: false,
+			isPost: false,
+			isArchive: false,
+			isTag: true,
+			isCategory: false,
+			open_in_new: true,
+			root: "/",
+			innerArchive: true
+		}
+	</script>
+	<script src="/assets/js/main.js"></script>
+	{% include tools_col.html %}
 </body>
 </html>

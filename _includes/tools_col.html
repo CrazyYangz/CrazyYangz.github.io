@@ -1,0 +1,34 @@
+<div class="tools-col">
+  <ul class="btn-wrap">
+      <li class="chose" data-hook="tools-section-all">
+        <span class="text">全部</span>
+        <i class="iconfont icon-book">&#xe61c;</i>
+      </li>
+      <li data-hook="tools-section-tag">
+        <span class="text">标签</span>
+        <i class="iconfont icon-price-tags">&#xe600;</i>
+      </li>
+      <li data-hook="tools-section-me">
+        <span class="text">我</span>
+        <i class="iconfont icon-smile">&#xe7d4;</i>
+      </li>
+  </ul>
+  <div class="tools-wrap">
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+          {% for tag in site.tags %}
+            {% assign t = tag | first %}
+            {% assign posts = tag | last %}
+    				<a href="/tags/{{t | downcase | replace:" ","-" }}" style="font-size: 10px;">{{t | downcase | replace:" ","-" }}</a>
+          {% endfor %}
+    			</div>
+    	</section>
+
+    	<section class="tools-section tools-section-me">
+  	  		<div class="aboutme-wrap" id="js-aboutme">Litten，&lt;br&gt;毕业于华科，就职于鹅厂&lt;br&gt;&lt;br&gt;热爱大海与冷笑话，&lt;br/&gt;目前是一枚前端&lt;br/&gt;&lt;br/&gt;胆小认生，不易相处，&lt;br&gt;年轻无为，卖马为生。</div>
+    	</section>
+  </div>
+</div>

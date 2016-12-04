@@ -30,6 +30,7 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll_image_encode
 exclude:
   - Gemfile
   - Gemfile.lock

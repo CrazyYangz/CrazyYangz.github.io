@@ -19,17 +19,21 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.8.0)
       jekyll (~> 3.3)
-    jekyll-sass-converter (1.4.0)
+    jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
-    kramdown (1.12.0)
+    jekyll_image_encode (0.0.4)
+      mimemagic (>= 0.2.0)
+    kramdown (1.13.1)
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
-    minima (2.0.0)
+    mimemagic (0.3.2)
+    minima (2.1.0)
+      jekyll (~> 3.3)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.4)
@@ -46,6 +50,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.3.0)
   jekyll-feed (~> 0.6)
+  jekyll_image_encode
   minima (~> 2.0)
 
 RUBY VERSION
