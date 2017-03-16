@@ -6,7 +6,7 @@
 <body>
 	<div id="container">
 		{% include left_col.html %}
-		<div class="right-col">
+		<div class="right-col mid-col">
 			<div class="right-wrap">
 				<article class="article article-type-post">
 					<div class="article-inner">
