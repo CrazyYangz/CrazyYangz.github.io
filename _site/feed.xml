@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-12-06T12:08:24+08:00</updated><id>http://localhost:4000//</id><title type="html">Young</title><subtitle>乐观的悲观主义者
-</subtitle><entry><title type="html">关于Jekyll excerpt的一些设置</title><link href="http://localhost:4000/2016/11/29/jekyll-excerpt/" rel="alternate" type="text/html" title="关于Jekyll excerpt的一些设置" /><published>2016-11-29T00:00:00+08:00</published><updated>2016-11-29T00:00:00+08:00</updated><id>http://localhost:4000/2016/11/29/jekyll-excerpt</id><content type="html" xml:base="http://localhost:4000/2016/11/29/jekyll-excerpt/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-16T14:54:10+08:00</updated><id>http://localhost:4000//</id><title type="html">Young</title><subtitle>乐观的悲观主义者
+</subtitle><entry><title type="html">更新一下心情</title><link href="http://localhost:4000/2017/03/16/diary-2017-03-11-03-15/" rel="alternate" type="text/html" title="更新一下心情" /><published>2017-03-16T00:00:00+08:00</published><updated>2017-03-16T00:00:00+08:00</updated><id>http://localhost:4000/2017/03/16/diary</id><content type="html" xml:base="http://localhost:4000/2017/03/16/diary-2017-03-11-03-15/">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary_1.jpeg&quot; height=&quot;350&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;好久没写了，都块忘记怎么操作命令行了，好像很多事情一样，生疏了就会产生距离感。&lt;/p&gt;
+
+&lt;p&gt;其实心情并没有很起伏，这个就是奇怪的地方。&lt;/p&gt;
+
+&lt;p&gt;曾经多少次想象过自己会在演唱会的现场嗨翻天，跟着舞台上的歌手一起唱到喉咙沙哑，一边随着歌词打开回忆的盒子。可是人生第一次看的张学友的演唱会，却是那么古井无波，坐在看台，我竟然有一丝丝睡意，想来，或许是没有太多会唱的歌曲，没有代入感，因为也就无关台上站的是谁——如果是Jay，那自然是另外一番场景了。&lt;/p&gt;
+
+&lt;p&gt;去迪士尼的心情要好一些些，陪着她玩极速光轮，海盗船，地平线，真是像个孩子，让我喜欢。可是，也并没有那种非常激动的感觉，找不着当年去黄山的时候那种激动、兴奋的劲，到底是为啥呢？哦，那天在下雨，这锅甩给老天吧。&lt;/p&gt;
+
+&lt;p&gt;我想，我是不是需要一些兴奋剂了…&lt;/p&gt;</content><category term="日常" /><category term="心情" /><summary type="html">好久没写了，都块忘记怎么操作命令行了，好像很多事情一样，生疏了就会产生距离感。
+
+其实心情并没有很起伏，这个就是奇怪的地方。
+
+曾经多少次想象过自己会在演唱会的现场嗨翻天，跟着舞台上的歌手一起唱到喉咙沙哑，一边随着歌词打开回忆的盒子。可是人生第一次看的张学友的演唱会，却是那么古井无波，坐在看台，我竟然有一丝丝睡意，想来，或许是没有太多会唱的歌曲，没有代入感，因为也就无关台上站的是谁——如果是Jay，那自然是另外一番场景了。
+
+去迪士尼的心情要好一些些，陪着她玩极速光轮，海盗船，地平线，真是像个孩子，让我喜欢。可是，也并没有那种非常激动的感觉，找不着当年去黄山的时候那种激动、兴奋的劲，到底是为啥呢？哦，那天在下雨，这锅甩给老天吧。
+
+我想，我是不是需要一些兴奋剂了…</summary></entry><entry><title type="html">关于Jekyll excerpt的一些设置</title><link href="http://localhost:4000/2016/11/29/jekyll-excerpt/" rel="alternate" type="text/html" title="关于Jekyll excerpt的一些设置" /><published>2016-11-29T00:00:00+08:00</published><updated>2016-11-29T00:00:00+08:00</updated><id>http://localhost:4000/2016/11/29/jekyll-excerpt</id><content type="html" xml:base="http://localhost:4000/2016/11/29/jekyll-excerpt/">&lt;blockquote&gt;
 Ps：大括号 &lt;strong&gt;{ }&lt;/strong&gt; 是Jekyll中的转义字符，因此输出大括号时，应使用:
 &lt;code&gt;
 

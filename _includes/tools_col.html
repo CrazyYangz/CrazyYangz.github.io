@@ -15,20 +15,36 @@
   </ul>
   <div class="tools-wrap">
     	<section class="tools-section tools-section-all chose">
+        <div class="inner-archives-wrap">
+          <div class="wrap-child">
+            <ul class="inner-archives">
+            {% for post in site.posts %}
+              <li>
+                <a href="{{ post.url }}">
+                  <h4>{{ post.title }}</h4>
+                </a>
+                <p class="time"><i class="iconfont">&#xe61e;</i>{{ post.date | date: "%Y-%m-%d" }}</p>
+                <p><i class="iconfont">&#xe62c;</i>{% for tag in post.tags %}<span>#{{ tag }}</span>{% endfor %}
+                </p>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
     	</section>
 
     	<section class="tools-section tools-section-tag">
-    			<div class="widget tagcloud" id="js-tagcloud">
-          {% for tag in site.tags %}
-            {% assign t = tag | first %}
-            {% assign posts = tag | last %}
-    				<a href="/tags/{{t | downcase | replace:" ","-" }}" style="font-size: 10px;">{{t | downcase | replace:" ","-" }}</a>
-          {% endfor %}
-    			</div>
+  			<div class="widget tagcloud" id="js-tagcloud">
+        {% for tag in site.tags %}
+          {% assign t = tag | first %}
+          {% assign posts = tag | last %}
+  				<a href="/tags/{{t | downcase | replace:" ","-" }}" style="font-size: 10px;">{{t | downcase | replace:" ","-" }}</a>
+        {% endfor %}
+  			</div>
     	</section>
 
     	<section class="tools-section tools-section-me">
-  	  		<div class="aboutme-wrap" id="js-aboutme">{{ site.title }}，&lt;br&gt;平凡，众生中普通一人&lt;br&gt;出众，世界里唯我精彩&lt;br&gt;&lt;br&gt;面朝大海，春暖花开。</div>
+	  		<div class="aboutme-wrap" id="js-aboutme">{{ site.title }}，&lt;br&gt;平凡，众生中普通一人&lt;br&gt;出众，世界里唯我精彩&lt;br&gt;&lt;br&gt;面朝大海，春暖花开。</div>
     	</section>
   </div>
 </div>
