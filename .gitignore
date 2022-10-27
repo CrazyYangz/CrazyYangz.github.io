@@ -23,3 +23,5 @@ package.json
 
 #Ignore others
 /assets/img/.DS_Store
+
+.DS_Store
